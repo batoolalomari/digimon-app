@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <form action="/digimon/<%=data.id%>?_method=PUT" method="get">
+        <h2><%=data.name%></h2>
+        <h2><%=data.level%></h2>
+            <button type="submit">updata details</button>
+        </form>
+
+        <form action="/digimon/<%=data.id%>?_method=DELETE" method="get">
+            <button type="submit">Delete details</button>
+        </form>
+
+</body>
+</html>

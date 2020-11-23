@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%data.forEach(result=>{%>
+
+        <img src="<%=result.img%>" alt="">
+        <h2><%=result.name%></h2>
+        <h2><%=result.level%></h2>
+
+        <form action="/digimon" method="post">
+            <button type="submit">Add To Favorite</button>
+        </form>
+
+    <%})%>
+</body>
+</html>
