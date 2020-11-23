@@ -7,13 +7,13 @@
 </head>
 <body>
    
-    <form action="/digimon/<%=data.id%>?_method=PUT" method="get">
+    <form action="/digimon/<%=data.id%>?_method=PUT" method="POST">
         <h2><%=data.name%></h2>
         <h2><%=data.level%></h2>
             <button type="submit">updata details</button>
         </form>
 
-        <form action="/digimon/<%=data.id%>?_method=DELETE" method="get">
+        <form action="/digimon/<%=data.id%>?_method=DELETE" method="POST">
             <button type="submit">Delete details</button>
         </form>
 
